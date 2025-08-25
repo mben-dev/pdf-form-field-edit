@@ -201,8 +201,9 @@ export default function Home() {
   const hasChanges = fields.some((field) => field.name !== field.new_name);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8">
-      <div className="max-w-4xl mx-auto">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col">
+      <div className="flex-1 p-8">
+        <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <div className="flex justify-center items-center gap-4 mb-4">
             <h1 className="text-4xl font-bold text-gray-800">{t.title}</h1>
@@ -390,10 +391,11 @@ export default function Home() {
             </div>
           </div>
         )}
+        </div>
       </div>
 
       {/* Footer */}
-      <footer className="mt-20 py-8 border-t border-gray-200">
+      <footer className="py-8 border-t border-gray-200 bg-white/50 backdrop-blur-sm">
         <div className="max-w-4xl mx-auto flex flex-col items-center gap-3">
           <div className="flex items-center gap-2 text-gray-600">
             <Code2 className="h-4 w-4" />
