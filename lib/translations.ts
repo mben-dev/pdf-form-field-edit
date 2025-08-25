@@ -29,6 +29,10 @@ export const translations = {
       fields: 'fields',
       failedAnalyze: 'Failed to analyze PDF. Please try again.',
       failedRename: 'Failed to rename PDF fields. Please try again.'
+    },
+    footer: {
+      poweredBy: 'Powered by',
+      madeWith: 'Made with'
     }
   },
   fr: {
@@ -61,6 +65,10 @@ export const translations = {
       fields: 'champs',
       failedAnalyze: 'Échec de l\'analyse du PDF. Veuillez réessayer.',
       failedRename: 'Échec du renommage des champs PDF. Veuillez réessayer.'
+    },
+    footer: {
+      poweredBy: 'Propulsé par',
+      madeWith: 'Fait avec'
     }
   }
 }
