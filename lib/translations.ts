@@ -32,7 +32,9 @@ export const translations = {
     },
     footer: {
       poweredBy: 'Powered by',
-      madeWith: 'Made with'
+      madeWith: 'Made with',
+      buyMeCoffee: 'Buy me a coffee',
+      supportProject: 'Support this project'
     }
   },
   fr: {
@@ -68,7 +70,9 @@ export const translations = {
     },
     footer: {
       poweredBy: 'Propulsé par',
-      madeWith: 'Fait avec'
+      madeWith: 'Fait avec',
+      buyMeCoffee: 'Offrez-moi un café',
+      supportProject: 'Soutenir ce projet'
     }
   }
 }

@@ -5,6 +5,7 @@ import {
   AlertCircle,
   Check,
   Code2,
+  Coffee,
   Download,
   Edit3,
   FileText,
@@ -396,37 +397,53 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-gray-200 bg-white/50 backdrop-blur-sm">
-        <div className="max-w-4xl mx-auto flex flex-col items-center gap-3">
+        <div className="max-w-4xl mx-auto flex flex-col items-center gap-4">
           <div className="flex items-center gap-2 text-gray-600">
             <Code2 className="h-4 w-4" />
             <span className="text-sm">{t.footer.madeWith}</span>
             <Heart className="h-4 w-4 text-red-500" />
           </div>
-          <a
-            href="https://mbendev.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-gray-900 to-gray-700 text-white hover:from-gray-800 hover:to-gray-600 transition-all transform hover:scale-105"
-          >
-            <span className="font-semibold">{t.footer.poweredBy}</span>
-            <span className="font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              MBEN DEV
-            </span>
-            <svg
-              className="h-4 w-4 group-hover:translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            {/* Buy Me a Coffee Button */}
+            <a
+              href="https://www.buymeacoffee.com/mbendev" // Remplace 'mbendev' par ton username Buy Me a Coffee
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-yellow-400 to-orange-400 text-white hover:from-yellow-500 hover:to-orange-500 transition-all transform hover:scale-105 shadow-lg"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
-              />
-            </svg>
-          </a>
-          <p className="text-xs text-gray-500 mt-2">
+              <Coffee className="h-5 w-5" />
+              <span className="font-semibold">{t.footer.buyMeCoffee}</span>
+            </a>
+
+            {/* MBEN DEV Link */}
+            <a
+              href="https://mbendev.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-gray-900 to-gray-700 text-white hover:from-gray-800 hover:to-gray-600 transition-all transform hover:scale-105"
+            >
+              <span className="font-semibold">{t.footer.poweredBy}</span>
+              <span className="font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                MBEN DEV
+              </span>
+              <svg
+                className="h-4 w-4 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <p className="text-xs text-gray-500">
             © 2025 PDF Form Field Editor. All rights reserved.
           </p>
         </div>
