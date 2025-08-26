@@ -407,7 +407,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center gap-3">
             {/* Buy Me a Coffee Button */}
             <a
-              href="https://www.buymeacoffee.com/mbendev" // Remplace 'mbendev' par ton username Buy Me a Coffee
+              href="https://buymeacoffee.com/mbendev"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-yellow-400 to-orange-400 text-white hover:from-yellow-500 hover:to-orange-500 transition-all transform hover:scale-105 shadow-lg"
